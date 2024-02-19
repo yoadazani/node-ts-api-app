@@ -1,13 +1,13 @@
 import path from 'path';
 import nodeExternals from 'webpack-node-externals';
-import WebpackShellPlugin from 'webpack-shell-plugin';
+import WebpackShellPluginNext from 'webpack-shell-plugin-next';
 
 const {
     NODE_ENV = 'production',
 } = process.env;
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: './src/app.ts',
     devtool: NODE_ENV === 'development' ? 'inline-source-map' : 'source-map',
     mode: NODE_ENV,
     watch: NODE_ENV === 'development',
@@ -24,16 +24,18 @@ module.exports = {
             {
                 test: /\.ts$/,
                 use: [
-                    'ts-loader',
+                    'ts-loader'
                 ]
             }
         ]
     },
     plugins: [
-        new WebpackShellPlugin({
-            onBuildEnd: [
-                'npm run start:dev'
-            ]
+        new WebpackShellPluginNext({
+            onBuildEnd: {
+                scripts: ['npm run start:prod'],
+                blocking: true,
+                parallel: false
+            }
         })
     ],
     externals: [

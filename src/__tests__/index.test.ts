@@ -1,6 +1,6 @@
 import supertest from 'supertest';
 
-import app from '../index';
+import app from '../app';
 
 describe('app', () => {
     let request: import('supertest/lib/agent');

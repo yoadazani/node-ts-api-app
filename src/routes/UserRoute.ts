@@ -1,17 +1,19 @@
 import { Router } from 'express';
+import { createUser, getUsers } from '../controllers/user_controller/Users';
 import {
-    createUser,
-    deleteUser,
-    getUsers,
+    getUser,
     updateUser,
-} from '../controllers/UserController';
+    deleteUser,
+} from '../controllers/user_controller/User';
+import { cacheMiddleware } from '../middlewares/cache';
 
 const router = Router();
 
+router.route('/').get(cacheMiddleware, getUsers).post(createUser);
+
 router
-    .route('/')
-    .get(getUsers)
-    .post(createUser)
+    .route('/:id')
+    .get(cacheMiddleware, getUser)
     .put(updateUser)
     .delete(deleteUser);
 
