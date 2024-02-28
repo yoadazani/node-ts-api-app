@@ -16,10 +16,7 @@ const login = async (req: Request, res: Response) => {
 
     const validated: ValidationResult = loginSchema.validate(req.body);
 
-    if (validated.error)
-        throw new AuthError(
-            validated.error.message || 'Invalid email or password',
-        );
+    if (validated.error) throw new AuthError(validated.error.message);
 
     const token = await authServices.login(email, password);
 
@@ -93,7 +90,8 @@ const confirmEmail = async (req: Request, res: Response) => {
             OTP,
         );
 
-    if (!OTPValid) throw new AuthError('OTP is not valid!');
+    if (!OTPValid)
+        throw new AuthError('OTP is not valid!', 'OTP', 'OTP Verification');
 
     res.status(200).json({
         message: 'Your email is confirmed!',
@@ -118,7 +116,11 @@ const resetPassword = async (req: Request, res: Response) => {
             userOTP,
         )
     ) {
-        throw new AuthError('There is an error occurred! Please try again.');
+        throw new AuthError(
+            'There is an error occurred! Please try again.',
+            undefined,
+            'Reset Password',
+        );
     }
 
     await authServices.resetPassword(user.id, newPassword);

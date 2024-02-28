@@ -13,12 +13,14 @@
     "scripts": {
         "start:dev": "NODE_ENV=development nodemon src/app.ts",
         "start:prod": "npx prisma generate && NODE_ENV=production nodemon build/index.bundle.js",
-        "build": "webpack",
+        "build": "npm run prisma:generate && npm run prisma:migrate && webpack",
         "test": "jest --coverage --watchAll --detectOpenHandles --forceExit --runInBand",
         "format": "prettier --write .",
         "lint:check": "eslint .",
         "lint:fix": "npm run lint:check -- --fix",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "prisma:generate": "npx prisma generate",
+        "prisma:migrate": "npx prisma migrate dev --name init"
     },
     "keywords": [],
     "author": "",

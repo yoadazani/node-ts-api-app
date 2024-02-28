@@ -1,0 +1,532 @@
+{
+  level: 'warn',
+  message: 'HTTP GET /',
+  metadata: {
+    meta: {
+      req: {
+        url: '/',
+        headers: {
+          host: 'localhost:3000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 14
+    },
+    timestamp: '2024-02-28T14:04:07.441Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/login',
+        headers: {
+          host: 'localhost:3000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/auth/login',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 4
+    },
+    timestamp: '2024-02-28T14:04:21.392Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /auth/lregister',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/lregister',
+        headers: {
+          host: 'localhost:3000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/auth/lregister',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 2
+    },
+    timestamp: '2024-02-28T14:04:37.507Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/register',
+        headers: {
+          host: 'localhost:3000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/auth/register',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 0
+    },
+    timestamp: '2024-02-28T14:04:45.147Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '03bae294-29a1-4c9e-a64b-170a864ec9ec',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '71'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/auth/register',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 0
+    },
+    timestamp: '2024-02-28T14:05:18.360Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': 'f17a560e-d1c2-40d5-b3e1-122b39864b99',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '71'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/auth/register',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 1
+    },
+    timestamp: '2024-02-28T14:06:26.090Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': 'bd02a6f2-449d-496e-9949-697591dd6a6f',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '71'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/auth/register',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 5
+    },
+    timestamp: '2024-02-28T14:06:45.199Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': 'f382fcc8-c3a8-480f-baea-e0c4caf69459',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '71'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/auth/register',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 6
+    },
+    timestamp: '2024-02-28T14:14:33.873Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '2c3f7359-50f9-4879-9277-b8823a622b2d',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '71'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/auth/register',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 4
+    },
+    timestamp: '2024-02-28T14:21:56.753Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/reset-password',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '50b2e706-623e-4406-88b9-c35f78f30324',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '71'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 2
+    },
+    timestamp: '2024-02-28T14:22:15.241Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/reset-password',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': 'ed3879a4-135a-425e-ac01-a081fab662ea',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '71'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 1
+    },
+    timestamp: '2024-02-28T14:22:23.010Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/reset-password',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '2e171057-6b31-44ae-8b0b-19021d96bd22',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '64'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 1
+    },
+    timestamp: '2024-02-28T14:23:00.693Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/reset-password',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '984a50d0-4800-4994-99c3-ed0def366335',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '97'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 12
+    },
+    timestamp: '2024-02-28T14:23:17.845Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/reset-password',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': 'ec885571-e6d6-4f8c-852d-54467225c1bc',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '97'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 4
+    },
+    timestamp: '2024-02-28T14:25:45.739Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/reset-password',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '636f1c62-5127-488c-8a47-f38bc7bb0a8c',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '97'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 13
+    },
+    timestamp: '2024-02-28T14:26:40.281Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '946cb157-a003-4553-8a11-e25cbc67424c',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '94'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/auth/register',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 3
+    },
+    timestamp: '2024-02-28T14:27:30.710Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '80fc2000-dd72-4da8-a8be-1bf501a01422',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '94'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/auth/register',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 3
+    },
+    timestamp: '2024-02-28T14:27:35.186Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/reset-password',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '8d30e2fb-c238-498a-b332-92f451ab8243',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '97'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 3
+    },
+    timestamp: '2024-02-28T14:30:12.375Z'
+  }
+}

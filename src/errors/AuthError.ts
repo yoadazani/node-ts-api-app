@@ -8,14 +8,23 @@ class AuthError extends CustomError {
     constructor(
         message: string,
         private property?: string,
+        statusType?: string,
     ) {
         super(message);
+        this.statusType = statusType ?? this.statusType;
 
         Object.setPrototypeOf(this, AuthError.prototype);
     }
 
     serializeErrors() {
-        return [{ message: this.message, property: this.property }];
+        return [
+            {
+                statusType: this.statusType,
+                statusCode: this.statusCode,
+                error: this.message,
+                property: this.property,
+            },
+        ];
     }
 }
 
