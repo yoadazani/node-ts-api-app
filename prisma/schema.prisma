@@ -11,11 +11,16 @@ datasource db {
 }
 
 model User {
-  id         String   @id() @unique() @default(uuid())
-  name       String
-  email      String
-  imageUrl   String?
-  password   String
-  created_at DateTime @default(now())
-  updated_at DateTime
+  id                      String    @id() @unique() @default(uuid())
+  name                    String
+  email                   String
+  imageUrl                String?
+  password                String
+  resetPasswordOTP        Int?
+  resetPasswordExpiration DateTime?
+  password_updated_at     DateTime?
+  created_at              DateTime  @default(now())
+  updated_at              DateTime  @default(now())
+
+  @@unique([email])
 }

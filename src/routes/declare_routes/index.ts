@@ -1,7 +1,10 @@
 import { Express } from 'express';
 
-import userRoute from '../UserRoute';
+import authRoute from '../AuthRoute';
+import { errorHandler } from '../../middlewares/errorHandler';
 
 export const declareRoutes = (app: Express) => {
-    app.use('/users', userRoute);
+    app.use('/auth', authRoute);
+
+    app.use('*', errorHandler);
 };

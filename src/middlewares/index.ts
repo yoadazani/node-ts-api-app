@@ -4,10 +4,12 @@ import cors from 'cors';
 import morgan from 'morgan';
 import express, { Express } from 'express';
 import path from 'path';
+import cookieParser from 'cookie-parser';
 import { loggerMiddleware } from './loggerMiddleWare';
 
 export const declareMiddlewares = (app: Express) => {
     // Middlewares
+    app.use(cookieParser());
     app.use(helmet());
     app.use(compression());
     app.use(cors());

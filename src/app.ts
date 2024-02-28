@@ -1,5 +1,6 @@
 import express, { Express } from 'express';
 import dotenv from 'dotenv';
+import 'express-async-errors';
 import { declareMiddlewares } from './middlewares';
 import { declareRoutes } from './routes/declare_routes';
 
