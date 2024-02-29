@@ -5,6 +5,23 @@ import * as authModel from '../modules/AuthModel';
 import { AuthError } from '../errors/AuthError';
 import { sendEmail } from '../utils/emailSender';
 
+const getUser = async (by: 'email' | 'id', value: string) => {
+    let user: UserType | null;
+    switch (by) {
+        case 'email':
+            user = await authModel.getUserByEmail(value);
+            break;
+        case 'id':
+            user = await authModel.getUserById(value);
+            break;
+        default:
+            user = null;
+            break;
+    }
+
+    return user;
+};
+
 const generateResetPasswordOTP = (): { OTP: number; OTPExpiration: Date } => {
     const OTP = Math.floor(100000 + Math.random() * 900000);
     const OTPExpiration = new Date(Date.now() + 1000 * 60 * 10); // 10 minutes
@@ -96,6 +113,7 @@ const resetPassword = async (
     authModel.updateUser(userId, { password: hashPassword(newPassword) });
 
 export {
+    getUser,
     register,
     login,
     createToken,

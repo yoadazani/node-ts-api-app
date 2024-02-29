@@ -1,0 +1,116 @@
+{
+  level: 'error',
+  message: 'HTTP GET /auth/me',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/me',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': 'a9fbf968-6f5e-4b91-82d8-4c35a4dd0aec',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '68',
+          cookie: 'accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg1N2M1OWUxLTc4MDgtNDFmYy04NTNhLWM3ZDkwNjFmOGJlMyIsImVtYWlsIjoieW9hZDIwOEBnbWFpbC5jb20iLCJpYXQiOjE3MDkxMzQwMjQsImV4cCI6MTcwOTEzNzYyNH0.pKVRiDfVB2ld32b4atMZYx0FI6NKrmhiE7905JMRoLA'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/auth/me',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 1
+    },
+    timestamp: '2024-02-28T15:27:19.569Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /auth/me',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/me',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': 'a01737d7-3eed-4965-a361-ccd4e9bbba22',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '68',
+          cookie: 'accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg1N2M1OWUxLTc4MDgtNDFmYy04NTNhLWM3ZDkwNjFmOGJlMyIsImVtYWlsIjoieW9hZDIwOEBnbWFpbC5jb20iLCJpYXQiOjE3MDkxMzQwMjQsImV4cCI6MTcwOTEzNzYyNH0.pKVRiDfVB2ld32b4atMZYx0FI6NKrmhiE7905JMRoLA'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/auth/me',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 0
+    },
+    timestamp: '2024-02-28T15:27:41.887Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /auth/me',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/me',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': 'cdfceee1-1d82-4bbd-943a-7b59572ddfc0',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '68',
+          cookie: 'accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg1N2M1OWUxLTc4MDgtNDFmYy04NTNhLWM3ZDkwNjFmOGJlMyIsImVtYWlsIjoieW9hZDIwOEBnbWFpbC5jb20iLCJpYXQiOjE3MDkxMzQwMjQsImV4cCI6MTcwOTEzNzYyNH0.pKVRiDfVB2ld32b4atMZYx0FI6NKrmhiE7905JMRoLA'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/auth/me',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 3
+    },
+    timestamp: '2024-02-28T15:28:06.484Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /auth/me',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/me',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '220718af-a7f0-4451-a97b-56b54d21ec46',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '68',
+          cookie: 'accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg1N2M1OWUxLTc4MDgtNDFmYy04NTNhLWM3ZDkwNjFmOGJlMyIsImVtYWlsIjoieW9hZDIwOEBnbWFpbC5jb20iLCJpYXQiOjE3MDkxMzQwMjQsImV4cCI6MTcwOTEzNzYyNH0.pKVRiDfVB2ld32b4atMZYx0FI6NKrmhiE7905JMRoLA'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/auth/me',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 1
+    },
+    timestamp: '2024-02-28T15:28:50.279Z'
+  }
+}

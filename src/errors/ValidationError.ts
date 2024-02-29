@@ -1,22 +1,18 @@
 import { CustomError } from './CustomError';
 import { HttpStatusCodes } from '../constants/httpStatusCodes';
 
-class AuthError extends CustomError {
-    statusCode = HttpStatusCodes.NOT_FOUND;
+class ValidationError extends CustomError {
+    statusCode = HttpStatusCodes.FORBIDDEN;
 
-    statusType = 'Authentication Error';
+    statusType = 'Validation Error';
 
     constructor(
         message: string,
         private property?: string,
-        statusType?: string,
-        statusCode?: number,
     ) {
         super(message);
-        this.statusType = statusType ?? this.statusType;
-        this.statusCode = statusCode ?? this.statusCode;
 
-        Object.setPrototypeOf(this, AuthError.prototype);
+        Object.setPrototypeOf(this, ValidationError.prototype);
     }
 
     serializeErrors() {
@@ -31,4 +27,4 @@ class AuthError extends CustomError {
     }
 }
 
-export { AuthError };
+export { ValidationError };

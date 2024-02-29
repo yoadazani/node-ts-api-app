@@ -4,9 +4,12 @@ import {
     forgotPassword,
     login,
     logout,
-    signup,
+    me,
     resetPassword,
+    signup,
 } from '../controllers/AuthController';
+import { cacheMiddleware } from '../middlewares/cache';
+import { isAuthenticated } from '../middlewares/isAuthenticated';
 
 declare module 'express-serve-static-core' {
     interface Request {
@@ -18,9 +21,11 @@ const router = Router();
 
 router.route('/login').get(login);
 
-router.route('/register').post(signup);
+router.route('/signup').post(signup);
 
 router.route('/logout').get(logout);
+
+router.route('/me').get(isAuthenticated, cacheMiddleware, me);
 
 router.route('/forget-password/:email').get(forgotPassword);
 

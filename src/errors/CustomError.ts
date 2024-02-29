@@ -1,4 +1,6 @@
-export abstract class CustomError extends Error {
+import { ICustomError } from '../interfaces/ICustomError';
+
+export abstract class CustomError extends Error implements ICustomError {
     abstract statusCode: number;
 
     abstract statusType: string;
