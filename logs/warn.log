@@ -855,3 +855,227 @@
     timestamp: '2024-02-29T12:53:37.163Z'
   }
 }
+{
+  level: 'warn',
+  message: 'HTTP GET /',
+  metadata: {
+    meta: {
+      req: {
+        url: '/',
+        headers: {
+          host: 'localhost:3000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a; next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..SKGmqOhBRHjiLjoN.4UOxyEcMC54jM65u7k1iKKWkmbF4-tRXFTkrGK4rLEG78IcJzSeBmlvzmt4xcs2_XNSbZdmXTCuXqHj8QLph49b6pEYwWDdtvkqP6LTnX7Ede42LndHsRSho08_aDfTwPcWGhEuPaX296MrYtBqDeRcIbu3fOvqjBQ8s4ZhylMGISXF7qhDps3rUurh3TugBdTOImDX2xVS3zCITNZKu0I4Ltjl9W7PH0nDotusQMD37pzmJhiY1zo50124Vd7Ne1PSdK_DJzhZYLLFLmOqS5alfF8KWl7Oc3cSY1--_-UEli78_lCIADPRkLHFGNFsmRMyOqGHucm9m7juMRNbtB-OyqIhWZdvZLRYwukKaWlI59LI5K7ZhH0G6SDkMgnKFNzt2UrJH9PTZBnC0pPVOZnQnnZY.pxrEVbVIEBL4jp6UJ9HkzQ'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 3
+    },
+    timestamp: '2024-03-03T09:49:47.128Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /ME',
+  metadata: {
+    meta: {
+      req: {
+        url: '/ME',
+        headers: {
+          host: 'localhost:3000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a; next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..SKGmqOhBRHjiLjoN.4UOxyEcMC54jM65u7k1iKKWkmbF4-tRXFTkrGK4rLEG78IcJzSeBmlvzmt4xcs2_XNSbZdmXTCuXqHj8QLph49b6pEYwWDdtvkqP6LTnX7Ede42LndHsRSho08_aDfTwPcWGhEuPaX296MrYtBqDeRcIbu3fOvqjBQ8s4ZhylMGISXF7qhDps3rUurh3TugBdTOImDX2xVS3zCITNZKu0I4Ltjl9W7PH0nDotusQMD37pzmJhiY1zo50124Vd7Ne1PSdK_DJzhZYLLFLmOqS5alfF8KWl7Oc3cSY1--_-UEli78_lCIADPRkLHFGNFsmRMyOqGHucm9m7juMRNbtB-OyqIhWZdvZLRYwukKaWlI59LI5K7ZhH0G6SDkMgnKFNzt2UrJH9PTZBnC0pPVOZnQnnZY.pxrEVbVIEBL4jp6UJ9HkzQ'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/ME',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-03T09:50:05.679Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /me',
+  metadata: {
+    meta: {
+      req: {
+        url: '/me',
+        headers: {
+          host: 'localhost:3000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a; next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..SKGmqOhBRHjiLjoN.4UOxyEcMC54jM65u7k1iKKWkmbF4-tRXFTkrGK4rLEG78IcJzSeBmlvzmt4xcs2_XNSbZdmXTCuXqHj8QLph49b6pEYwWDdtvkqP6LTnX7Ede42LndHsRSho08_aDfTwPcWGhEuPaX296MrYtBqDeRcIbu3fOvqjBQ8s4ZhylMGISXF7qhDps3rUurh3TugBdTOImDX2xVS3zCITNZKu0I4Ltjl9W7PH0nDotusQMD37pzmJhiY1zo50124Vd7Ne1PSdK_DJzhZYLLFLmOqS5alfF8KWl7Oc3cSY1--_-UEli78_lCIADPRkLHFGNFsmRMyOqGHucm9m7juMRNbtB-OyqIhWZdvZLRYwukKaWlI59LI5K7ZhH0G6SDkMgnKFNzt2UrJH9PTZBnC0pPVOZnQnnZY.pxrEVbVIEBL4jp6UJ9HkzQ'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/me',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-03T09:50:10.826Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/login',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': 'f2200be3-dbb8-4e4c-b9c2-38c2901e0bbd',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '70'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/auth/login',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 4
+    },
+    timestamp: '2024-03-03T09:50:45.758Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/reset-password',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '0aabf9bf-caa4-4f91-b4ef-c326faf179d7',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '68'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 3
+    },
+    timestamp: '2024-03-03T09:55:49.166Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/auth/reset-password',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.28.4',
+          accept: '*/*',
+          'postman-token': '830c6965-6059-4b48-bfe6-dd433c30823f',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '68'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-03T09:56:06.594Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /',
+  metadata: {
+    meta: {
+      req: {
+        url: '/',
+        headers: {
+          host: 'localhost:3000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a; next-auth.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..SKGmqOhBRHjiLjoN.4UOxyEcMC54jM65u7k1iKKWkmbF4-tRXFTkrGK4rLEG78IcJzSeBmlvzmt4xcs2_XNSbZdmXTCuXqHj8QLph49b6pEYwWDdtvkqP6LTnX7Ede42LndHsRSho08_aDfTwPcWGhEuPaX296MrYtBqDeRcIbu3fOvqjBQ8s4ZhylMGISXF7qhDps3rUurh3TugBdTOImDX2xVS3zCITNZKu0I4Ltjl9W7PH0nDotusQMD37pzmJhiY1zo50124Vd7Ne1PSdK_DJzhZYLLFLmOqS5alfF8KWl7Oc3cSY1--_-UEli78_lCIADPRkLHFGNFsmRMyOqGHucm9m7juMRNbtB-OyqIhWZdvZLRYwukKaWlI59LI5K7ZhH0G6SDkMgnKFNzt2UrJH9PTZBnC0pPVOZnQnnZY.pxrEVbVIEBL4jp6UJ9HkzQ'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 5
+    },
+    timestamp: '2024-03-03T09:59:35.571Z'
+  }
+}

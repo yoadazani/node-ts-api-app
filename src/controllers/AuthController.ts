@@ -61,6 +61,7 @@ const signup = async (req: Request, res: Response) => {
 };
 
 const logout = async (_req: Request, res: Response) => {
+    // remove cookie
     res.clearCookie('accessToken');
 
     res.status(HttpStatusCodes.OK).json({
