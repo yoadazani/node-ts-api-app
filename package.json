@@ -1,5 +1,5 @@
 {
-    "name": "new-folder",
+    "name": "node_ts_api",
     "version": "1.0.0",
     "description": "",
     "lint-staged": {
@@ -15,7 +15,7 @@
         "start:dev": "NODE_ENV=development nodemon src/app.ts",
         "start:prod": "npx prisma generate && NODE_ENV=production nodemon build/index.bundle.js",
         "build": "npm run prisma:generate && npm run prisma:migrate && webpack",
-        "test": "set PORT=4000 && jest --watchAll --detectOpenHandles --forceExit",
+        "test": "set PORT=4000 && jest --watchAll --detectOpenHandles --forceExit --coverage",
         "format": "prettier --write .",
         "lint:check": "eslint .",
         "lint:fix": "npm run lint:check -- --fix",
