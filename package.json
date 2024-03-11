@@ -2,6 +2,11 @@
     "name": "node_ts_api",
     "version": "1.0.0",
     "description": "",
+    "bin": "bin/cli.js",
+    "repository": {
+        "git": "git",
+        "url": "https://github.com/yoadazani/node-ts-api-app.git"
+    },
     "lint-staged": {
         "src/**/*.ts": [
             "prettier --write",
