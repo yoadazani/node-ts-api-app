@@ -4,6 +4,7 @@ import { UserType } from '../types/UserType';
 import * as authModel from '../modules/AuthModel';
 import { AuthError } from '../errors/AuthError';
 import { sendEmail } from '../utils/emailSender';
+import { HttpStatusCodes } from '../constants/httpStatusCodes';
 
 const getUser = async (by: 'email' | 'id', value: string) => {
     let user: UserType | null;
@@ -84,10 +85,11 @@ const comparePassword = (password: string, hashedPassword: string): boolean =>
     bcrypt.compareSync(password, hashedPassword);
 
 const login = async (email: string, password: string): Promise<string> => {
-    const user: UserType | null = await authModel.getUserByEmail(email);
+    const user: UserType | null = await getUser('email', email);
 
-    if (!user || !comparePassword(password, user.password))
+    if (!user || !comparePassword(password, user.password)) {
         throw new AuthError('User not found!');
+    }
 
     return createToken(user);
 };
@@ -97,7 +99,13 @@ const register = async (newUser: UserType): Promise<UserType> => {
         newUser.email,
     );
 
-    if (userExists) throw new Error('User already exists!');
+    if (userExists)
+        throw new AuthError(
+            'User already exists!',
+            'email',
+            'Conflict',
+            HttpStatusCodes.CONFLICT,
+        );
 
     const PasswordHash = hashPassword(newUser.password);
 
@@ -121,4 +129,6 @@ export {
     verifyResetPasswordOTP,
     resetPassword,
     removeResetPasswordOTP,
+    hashPassword,
+    comparePassword,
 };

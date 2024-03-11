@@ -1,6 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { UserType } from '../types/UserType';
+import { AuthError } from '../errors/AuthError';
+import { HttpStatusCodes } from '../constants/httpStatusCodes';
 
 export const isAuthenticated = (
     req: Request,
@@ -21,6 +23,11 @@ export const isAuthenticated = (
     } catch (error) {
         res.clearCookie('accessToken');
 
-        throw new Error('User not authenticated!');
+        throw new AuthError(
+            'User not authenticated!',
+            undefined,
+            'Unauthorized',
+            HttpStatusCodes.UNAUTHORIZED,
+        );
     }
 };

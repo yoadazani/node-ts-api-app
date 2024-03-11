@@ -20,7 +20,7 @@ const sendEmail = (email: string, subject: string, text: string) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.log(error);
+            throw new Error(error.message);
         } else {
             console.log(`Email sent: ${info.response}`);
         }

@@ -24,7 +24,6 @@ export const cacheMiddleware = (
     res.send = (body: Send): Response => {
         console.log(`Cache miss for ${key}`);
         cache.set(key, body);
-        console.log(cache.get(key));
         return originalSend.call(res, body);
     };
 

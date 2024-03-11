@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import { CustomError } from '../errors/CustomError';
+import { ResponseType } from '../types/ResponseType';
 
 const errorHandler = (
     err: Error,
@@ -8,14 +9,21 @@ const errorHandler = (
     next: NextFunction,
 ) => {
     if (err instanceof CustomError) {
-        return res
-            .status(err.statusCode)
-            .json({ message: err.serializeErrors() });
+        const errorType = err.serializeErrors();
+        const response: ResponseType<typeof errorType> = {
+            message: 'There was an error',
+            error: err.serializeErrors(),
+        };
+        return res.status(err.statusCode).json(response);
     }
 
-    res.status(500).json({
-        message: err.message,
-    });
+    const errorType = err.message;
+    const response: ResponseType<typeof errorType> = {
+        message: 'There was an error',
+        error: err.message,
+    };
+
+    res.status(500).json(response);
 
     return next();
 };

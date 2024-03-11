@@ -11,6 +11,7 @@ import { confirmEmailSchema } from '../schemas/auth/confirmEmailSchema';
 import { resetPasswordSchema } from '../schemas/auth/resetPasswordSchema';
 import { HttpStatusCodes } from '../constants/httpStatusCodes';
 import { ValidationError } from '../errors/ValidationError';
+import { ResponseType } from '../types/ResponseType';
 
 const login = async (req: Request, res: Response) => {
     const { email, password } = req.body;
@@ -36,10 +37,11 @@ const login = async (req: Request, res: Response) => {
 
     res.cookie('accessToken', token, cookiesOptions);
 
-    res.status(HttpStatusCodes.OK).json({
-        message: 'Login user!',
-        token,
-    });
+    const response: ResponseType<{ token: string }> = {
+        message: 'user logged in!',
+        data: { token },
+    };
+    res.status(HttpStatusCodes.OK).json(response);
 };
 
 const signup = async (req: Request, res: Response) => {
@@ -54,10 +56,13 @@ const signup = async (req: Request, res: Response) => {
 
     const newUserCreated: UserType = await authServices.register(req.body);
 
-    res.status(HttpStatusCodes.CREATED).json({
+    const response: ResponseType<{ user: UserType }> = {
         message: 'User created!',
-        user: newUserCreated,
-    });
+        data: {
+            user: newUserCreated,
+        },
+    };
+    res.status(HttpStatusCodes.CREATED).json(response);
 };
 
 const logout = async (_req: Request, res: Response) => {
@@ -65,7 +70,7 @@ const logout = async (_req: Request, res: Response) => {
     res.clearCookie('accessToken');
 
     res.status(HttpStatusCodes.OK).json({
-        message: 'Logout user!',
+        message: 'user logged out!',
     });
 };
 
@@ -85,13 +90,21 @@ const me = async (req: Request, res: Response) => {
             HttpStatusCodes.UNAUTHORIZED,
         );
 
-    res.status(HttpStatusCodes.OK).json(user);
+    const response: ResponseType<{ user: UserType }> = {
+        message: 'User info!',
+        data: {
+            user,
+        },
+    };
+    res.status(HttpStatusCodes.OK).json(response);
 };
 
 const forgotPassword = async (req: Request, res: Response) => {
     const { email } = req.params;
 
-    const validated: ValidationResult = forgetPasswordSchema.validate(req.body);
+    const validated: ValidationResult = forgetPasswordSchema.validate({
+        email,
+    });
 
     if (validated.error) {
         const errorMessage = validated.error.message;
@@ -131,13 +144,15 @@ const confirmEmail = async (req: Request, res: Response) => {
             OTP,
         );
 
-    if (!OTPValid)
-        throw new AuthError('OTP is not valid!', 'OTP', 'OTP Verification');
+    if (!OTPValid) throw new ValidationError('OTP is not valid!', 'OTP');
 
-    res.status(HttpStatusCodes.CREATED).json({
+    const response: ResponseType<{ user: UserType }> = {
         message: 'Your email is confirmed!',
-        user,
-    });
+        data: {
+            user,
+        },
+    };
+    res.status(HttpStatusCodes.CREATED).json(response);
 };
 
 const resetPassword = async (req: Request, res: Response) => {
@@ -173,7 +188,13 @@ const resetPassword = async (req: Request, res: Response) => {
 
     await authServices.removeResetPasswordOTP(user.id);
 
-    res.status(HttpStatusCodes.OK).json('Password changed successfully!');
+    const response: ResponseType<{ user: UserType }> = {
+        message: 'Password changed successfully!',
+        data: {
+            user,
+        },
+    };
+    res.status(HttpStatusCodes.OK).json(response);
 };
 
 export {
