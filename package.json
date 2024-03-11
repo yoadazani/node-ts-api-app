@@ -1,5 +1,5 @@
 {
-    "name": "@yoadazani/node_ts_api",
+    "name": "@yoadazani/express-ts-api",
     "version": "1.0.0",
     "description": "",
     "bin": "bin/cli.js",
