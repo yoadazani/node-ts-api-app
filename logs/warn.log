@@ -1,0 +1,1289 @@
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/signup',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/signup',
+        headers: {
+          host: '127.0.0.1:55382',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '47',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/signup',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 2
+    },
+    timestamp: '2024-03-15T13:15:08.468Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/signup',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/signup',
+        headers: {
+          host: '127.0.0.1:55383',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '37',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/signup',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:08.479Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/signup',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/signup',
+        headers: {
+          host: '127.0.0.1:55384',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '39',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/signup',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:08.486Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/signup',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/signup',
+        headers: {
+          host: '127.0.0.1:55385',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '61',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/signup',
+        query: {}
+      },
+      res: { statusCode: 409 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:08.493Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/login',
+        headers: {
+          host: '127.0.0.1:55392',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '47',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/login',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:08.658Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/login',
+        headers: {
+          host: '127.0.0.1:55394',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '61',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/login',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:08.702Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/login',
+        headers: {
+          host: '127.0.0.1:55395',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '23',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/login',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:08.709Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/login',
+        headers: {
+          host: '127.0.0.1:55396',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '25',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/login',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:08.713Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/me',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/me',
+        headers: {
+          host: '127.0.0.1:55404',
+          'accept-encoding': 'gzip, deflate',
+          cookie: 'accessToken=',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/me',
+        query: {}
+      },
+      res: { statusCode: 401 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:08.925Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/me',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/me',
+        headers: {
+          host: '127.0.0.1:55405',
+          'accept-encoding': 'gzip, deflate',
+          cookie: 'accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkOWU4MTcwLWU1NDItNDI5OS04NWNlLWZiNTNhNGQ2NmVkNiIsImVtYWlsIjoieW9hZDIzQGdtYWlsLmNvbSIsImlhdCI6MTcxMDA5MzI4NCwiZXhwIjoxNzEwMDk2ODg0fQ.ESouPcSLrXPGWghmmcYcW9fOOADcWfayrGKEB1MBj5I',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/me',
+        query: {}
+      },
+      res: { statusCode: 401 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:08.936Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/forget-password/test@test.co.il',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/forget-password/test@test.co.il',
+        headers: {
+          host: '127.0.0.1:55408',
+          'accept-encoding': 'gzip, deflate',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/forget-password/test@test.co.il',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:08.950Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/forget-password/test@test.outlook',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/forget-password/test@test.outlook',
+        headers: {
+          host: '127.0.0.1:55409',
+          'accept-encoding': 'gzip, deflate',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/forget-password/test@test.outlook',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:08.956Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/forget-password/test@test',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/forget-password/test@test',
+        headers: {
+          host: '127.0.0.1:55410',
+          'accept-encoding': 'gzip, deflate',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/forget-password/test@test',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:08.965Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/confirm-email',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/confirm-email',
+        headers: {
+          host: '127.0.0.1:55420',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '40',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/confirm-email',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:09.202Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/confirm-email',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/confirm-email',
+        headers: {
+          host: '127.0.0.1:55421',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '42',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/confirm-email',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:09.209Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/confirm-email',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/confirm-email',
+        headers: {
+          host: '127.0.0.1:55422',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '14',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/confirm-email',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:09.217Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/confirm-email',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/confirm-email',
+        headers: {
+          host: '127.0.0.1:55423',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '25',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/confirm-email',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:09.226Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/confirm-email',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/confirm-email',
+        headers: {
+          host: '127.0.0.1:55424',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '38',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/confirm-email',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:09.233Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55432',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '68',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:09.383Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55434',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '70',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 84
+    },
+    timestamp: '2024-03-15T13:15:09.771Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55435',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '42',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 88
+    },
+    timestamp: '2024-03-15T13:15:09.795Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55436',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '51',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 90
+    },
+    timestamp: '2024-03-15T13:15:09.802Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55437',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '44',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 82
+    },
+    timestamp: '2024-03-15T13:15:09.809Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55438',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '82',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 77
+    },
+    timestamp: '2024-03-15T13:15:09.817Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/signup',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/signup',
+        headers: {
+          host: '127.0.0.1:55446',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '47',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/signup',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 2
+    },
+    timestamp: '2024-03-15T13:15:10.931Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/signup',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/signup',
+        headers: {
+          host: '127.0.0.1:55447',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '37',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/signup',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:10.941Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/signup',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/signup',
+        headers: {
+          host: '127.0.0.1:55448',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '39',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/signup',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:10.957Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/signup',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/signup',
+        headers: {
+          host: '127.0.0.1:55449',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '61',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/signup',
+        query: {}
+      },
+      res: { statusCode: 409 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:10.967Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/login',
+        headers: {
+          host: '127.0.0.1:55456',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '47',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/login',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:11.147Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/login',
+        headers: {
+          host: '127.0.0.1:55458',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '61',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/login',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:11.228Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/login',
+        headers: {
+          host: '127.0.0.1:55459',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '23',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/login',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:11.235Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/login',
+        headers: {
+          host: '127.0.0.1:55460',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '25',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/login',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:11.239Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/me',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/me',
+        headers: {
+          host: '127.0.0.1:55468',
+          'accept-encoding': 'gzip, deflate',
+          cookie: 'accessToken=',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/me',
+        query: {}
+      },
+      res: { statusCode: 401 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:11.500Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/me',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/me',
+        headers: {
+          host: '127.0.0.1:55469',
+          'accept-encoding': 'gzip, deflate',
+          cookie: 'accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkOWU4MTcwLWU1NDItNDI5OS04NWNlLWZiNTNhNGQ2NmVkNiIsImVtYWlsIjoieW9hZDIzQGdtYWlsLmNvbSIsImlhdCI6MTcxMDA5MzI4NCwiZXhwIjoxNzEwMDk2ODg0fQ.ESouPcSLrXPGWghmmcYcW9fOOADcWfayrGKEB1MBj5I',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/me',
+        query: {}
+      },
+      res: { statusCode: 401 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:11.508Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/forget-password/test@test.co.il',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/forget-password/test@test.co.il',
+        headers: {
+          host: '127.0.0.1:55472',
+          'accept-encoding': 'gzip, deflate',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/forget-password/test@test.co.il',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:11.523Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/forget-password/test@test.outlook',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/forget-password/test@test.outlook',
+        headers: {
+          host: '127.0.0.1:55473',
+          'accept-encoding': 'gzip, deflate',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/forget-password/test@test.outlook',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 2
+    },
+    timestamp: '2024-03-15T13:15:11.530Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /api/v1/auth/forget-password/test@test',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/forget-password/test@test',
+        headers: {
+          host: '127.0.0.1:55474',
+          'accept-encoding': 'gzip, deflate',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/forget-password/test@test',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:11.536Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/confirm-email',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/confirm-email',
+        headers: {
+          host: '127.0.0.1:55484',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '40',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/confirm-email',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:11.767Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/confirm-email',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/confirm-email',
+        headers: {
+          host: '127.0.0.1:55485',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '42',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/confirm-email',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:11.778Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/confirm-email',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/confirm-email',
+        headers: {
+          host: '127.0.0.1:55486',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '14',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/confirm-email',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 0
+    },
+    timestamp: '2024-03-15T13:15:11.785Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/confirm-email',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/confirm-email',
+        headers: {
+          host: '127.0.0.1:55487',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '25',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/confirm-email',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 2
+    },
+    timestamp: '2024-03-15T13:15:11.795Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/confirm-email',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/confirm-email',
+        headers: {
+          host: '127.0.0.1:55488',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '38',
+          connection: 'close'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/confirm-email',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 1
+    },
+    timestamp: '2024-03-15T13:15:11.803Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55496',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '68',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 2
+    },
+    timestamp: '2024-03-15T13:15:11.961Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55498',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '70',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 22
+    },
+    timestamp: '2024-03-15T13:15:12.188Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55499',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '42',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 26
+    },
+    timestamp: '2024-03-15T13:15:12.195Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55500',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '51',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 26
+    },
+    timestamp: '2024-03-15T13:15:12.198Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55501',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '44',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 24
+    },
+    timestamp: '2024-03-15T13:15:12.201Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP PUT /api/v1/auth/reset-password',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/reset-password',
+        headers: {
+          host: '127.0.0.1:55502',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '82',
+          connection: 'close'
+        },
+        method: 'PUT',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/reset-password',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 24
+    },
+    timestamp: '2024-03-15T13:15:12.204Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /',
+  metadata: {
+    meta: {
+      req: {
+        url: '/',
+        headers: {
+          host: 'localhost:4000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a; Webstorm-594babca=71e83633-a999-45b8-8f22-af74af40c666'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 2
+    },
+    timestamp: '2024-03-15T13:21:47.111Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /',
+  metadata: {
+    meta: {
+      req: {
+        url: '/',
+        headers: {
+          host: 'localhost:8080',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a; Webstorm-594babca=71e83633-a999-45b8-8f22-af74af40c666'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 3
+    },
+    timestamp: '2024-03-15T13:21:51.738Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /',
+  metadata: {
+    meta: {
+      req: {
+        url: '/',
+        headers: {
+          host: 'localhost:4000',
+          connection: 'keep-alive',
+          'sec-ch-ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Microsoft Edge";v="122"',
+          'sec-ch-ua-mobile': '?0',
+          'sec-ch-ua-platform': '"Windows"',
+          'upgrade-insecure-requests': '1',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0',
+          accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+          'sec-fetch-site': 'none',
+          'sec-fetch-mode': 'navigate',
+          'sec-fetch-user': '?1',
+          'sec-fetch-dest': 'document',
+          'accept-encoding': 'gzip, deflate, br',
+          'accept-language': 'he,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
+          cookie: 'crisp-client%2Fsession%2F221301cd-3766-4ba4-84ca-4b2a111952d2=session_63440457-3660-4627-aa26-636aef29079a; Webstorm-594babca=71e83633-a999-45b8-8f22-af74af40c666'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 4
+    },
+    timestamp: '2024-03-15T13:26:57.834Z'
+  }
+}
