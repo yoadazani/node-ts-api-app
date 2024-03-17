@@ -7,4 +7,8 @@ export default {
     auth: {
         expiresIn: '1d',
     },
+    email: {
+        port: 578,
+        secure: true,
+    }
 };

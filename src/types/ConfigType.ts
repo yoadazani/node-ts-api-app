@@ -12,6 +12,9 @@ type AppConfig = {
 };
 
 type EmailConfig = {
+    service: string;
+    port: 587 | 465;
+    secure: boolean;
     emailUser: string;
     emailPass: string;
 };
@@ -19,6 +22,7 @@ type EmailConfig = {
 type AuthConfig = {
     jwtSecret: string;
     expiresIn: string;
+    otp_expiration: number;
 };
 
 export { EnvConfig, EmailConfig, ServerConfig, AppConfig, AuthConfig };

@@ -26,7 +26,7 @@ const getUser = async (by: 'email' | 'id', value: string) => {
 
 const generateResetPasswordOTP = (): { OTP: number; OTPExpiration: Date } => {
     const OTP = Math.floor(100000 + Math.random() * 900000);
-    const OTPExpiration = new Date(Date.now() + 1000 * 60 * 10); // 10 minutes
+    const OTPExpiration = new Date(Date.now() + authConfig.otp_expiration); // 10 minutes
 
     return {
         OTP,
