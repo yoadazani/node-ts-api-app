@@ -1,0 +1,50 @@
+{
+  level: 'error',
+  message: 'HTTP GET /api/v1/auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/login',
+        headers: {
+          host: '127.0.0.1:62729',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '47',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/login',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 85
+    },
+    timestamp: '2024-03-17T13:46:18.580Z'
+  }
+}
+{
+  level: 'error',
+  message: 'HTTP GET /api/v1/auth/login',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/login',
+        headers: {
+          host: '127.0.0.1:62803',
+          'accept-encoding': 'gzip, deflate',
+          'content-type': 'application/json',
+          'content-length': '47',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/login',
+        query: {}
+      },
+      res: { statusCode: 500 },
+      responseTime: 61
+    },
+    timestamp: '2024-03-17T13:46:47.615Z'
+  }
+}

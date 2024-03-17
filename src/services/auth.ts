@@ -5,6 +5,7 @@ import * as authModel from '../modules/AuthModel';
 import { AuthError } from '../errors/AuthError';
 import { sendEmail } from '../utils/emailSender';
 import { HttpStatusCodes } from '../constants/httpStatusCodes';
+import { authConfig } from '../../config';
 
 const getUser = async (by: 'email' | 'id', value: string) => {
     let user: UserType | null;
@@ -73,9 +74,9 @@ const sendEmailWithOTP = async (email: string): Promise<boolean> => {
 
 const createToken = (user: UserType): string => {
     const payload = { id: user.id, email: user.email };
-    const options = { expiresIn: '1h' };
+    const options = { expiresIn: authConfig.expiresIn };
 
-    return jwt.sign(payload, process.env.JWT_SECRET!, options);
+    return jwt.sign(payload, authConfig.jwtSecret!, options);
 };
 
 const hashPassword = (password: string): string =>

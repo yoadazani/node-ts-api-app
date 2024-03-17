@@ -499,4 +499,9 @@ describe('Given authController', () => {
             });
         });
     });
+
+    afterAll(() => {
+        jest.clearAllMocks();
+        prismaMock.$disconnect();
+    });
 });

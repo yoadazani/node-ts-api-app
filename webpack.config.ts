@@ -2,15 +2,14 @@ import path from 'path';
 import nodeExternals from 'webpack-node-externals';
 import WebpackShellPluginNext from 'webpack-shell-plugin-next';
 
-const {
-    NODE_ENV = 'production',
-} = process.env;
+import { env } from './config'
+
 
 module.exports = {
     entry: './src/app.ts',
-    devtool: NODE_ENV === 'development' ? 'inline-source-map' : 'source-map',
-    mode: NODE_ENV,
-    watch: NODE_ENV === 'development',
+    devtool: env === 'development' ? 'inline-source-map' : 'source-map',
+    mode: env,
+    watch: env === 'development',
     target: 'node',
     output: {
         path: path.resolve(__dirname, 'build'),

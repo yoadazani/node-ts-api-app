@@ -15,7 +15,7 @@
     },
     "main": "index.js",
     "scripts": {
-        "start": "nodemon src/app.ts",
+        "start": "NODE_ENV=YOAD nodemon src/app.ts",
         "start:dev": "NODE_ENV=development nodemon src/app.ts",
         "start:prod": "NODE_ENV=production nodemon build/index.bundle.js",
         "build": "npm run prisma:generate && npm run prisma:migrate && webpack",
@@ -31,7 +31,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@prisma/client": "^5.9.1",
+        "@prisma/client": "^5.11.0",
         "@types/joi": "^17.2.3",
         "@types/nodemailer": "^6.4.14",
         "axios": "^1.6.7",
@@ -86,7 +86,7 @@
         "lint-staged": "^15.2.2",
         "nodemon": "^3.0.3",
         "prettier": "^3.2.5",
-        "prisma": "^5.9.1",
+        "prisma": "^5.11.0",
         "supertest": "^6.3.4",
         "ts-jest": "^29.1.2",
         "ts-node": "^10.9.2",

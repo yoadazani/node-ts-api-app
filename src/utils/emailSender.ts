@@ -1,18 +1,19 @@
 import nodemailer from 'nodemailer';
+import { emailConfig } from '../../config';
 
 const transporter = nodemailer.createTransport({
     service: 'gmail.com',
     secure: true,
     port: 587,
     auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: emailConfig.emailUser,
+        pass: emailConfig.emailUser,
     },
 });
 
 const sendEmail = (email: string, subject: string, text: string) => {
     const mailOptions = {
-        from: process.env.EMAIL_USER,
+        from: emailConfig.emailUser,
         to: email,
         subject,
         text,

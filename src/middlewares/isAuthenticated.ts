@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import { UserType } from '../types/UserType';
 import { AuthError } from '../errors/AuthError';
 import { HttpStatusCodes } from '../constants/httpStatusCodes';
+import { authConfig } from '../../config';
 
 export const isAuthenticated = (
     req: Request,
@@ -14,7 +15,7 @@ export const isAuthenticated = (
 
         const { id } = jwt.verify(
             accessToken,
-            process.env.JWT_SECRET!,
+            authConfig.jwtSecret!,
         ) as Partial<UserType>;
 
         req.locals = { userId: id };
