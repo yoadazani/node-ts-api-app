@@ -48,7 +48,7 @@ const verifyResetPasswordOTP = (
     OTP: number,
 ): boolean => {
     const now = new Date();
-    return now < resetPasswordExpiration && resetPasswordOTP === OTP;
+    return now < resetPasswordExpiration && resetPasswordOTP === +OTP;
 };
 
 const sendEmailWithOTP = async (email: string): Promise<boolean> => {

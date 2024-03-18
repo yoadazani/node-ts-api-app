@@ -28,7 +28,7 @@ const authConfig: AuthConfig = {
 
 const emailConfig: EmailConfig = {
     service: config?.get<string>('email.service'),
-    port: config?.get<587 | 465>('email.port'),
+    port: config?.get<number>('email.port'),
     secure: config?.get<boolean>('email.secure'),
     emailUser: config?.get<string>('email.emailUser'),
     emailPass: config?.get<string>('email.emailPass'),

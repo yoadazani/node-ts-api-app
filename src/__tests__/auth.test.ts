@@ -17,11 +17,10 @@ jest.mock('../utils/emailSender', () => ({
     sendEmail: jest.fn(),
 }));
 
-beforeEach(() => {
-    mockReset(prismaMock);
-});
-
 describe('Given authController', () => {
+    beforeEach(() => {
+        mockReset(prismaMock);
+    });
     describe('Given signup route', () => {
         it('Should return status 201 and user data', async () => {
             const newUserData = {
@@ -270,7 +269,7 @@ describe('Given authController', () => {
         });
     });
     describe('Given confirm email route', () => {
-        it('should return status 200 and message', async () => {
+        it('should return status 201 and message', async () => {
             const req = {
                 OTP: 123456,
                 email: 'test@test.com',

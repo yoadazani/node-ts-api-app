@@ -6,14 +6,14 @@ const transporter = nodemailer.createTransport({
     secure: emailConfig.secure,
     port: emailConfig.port,
     auth: {
-        user: emailConfig.emailUser,
-        pass: emailConfig.emailUser,
+        user: emailConfig.emailUser!,
+        pass: emailConfig.emailUser!,
     },
 });
 
 const sendEmail = (email: string, subject: string, text: string) => {
     const mailOptions = {
-        from: emailConfig.emailUser,
+        from: emailConfig.emailUser!,
         to: email,
         subject,
         text,

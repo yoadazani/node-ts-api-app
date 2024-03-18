@@ -13,7 +13,7 @@ type AppConfig = {
 
 type EmailConfig = {
     service: string;
-    port: 587 | 465;
+    port: number;
     secure: boolean;
     emailUser: string;
     emailPass: string;

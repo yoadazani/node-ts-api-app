@@ -1,0 +1,19 @@
+import { Request, Response, NextFunction } from 'express';
+import createDOMPurify from 'dompurify';
+import jsdom from 'jsdom';
+
+const { JSDOM } = jsdom;
+
+const { window } = new JSDOM('');
+const DOMPurify = createDOMPurify(window);
+
+export const sanitizeData = (
+    req: Request,
+    res: Response,
+    next: NextFunction,
+) => {
+    Object.keys(req.body).forEach((key) => {
+        req.body[key] = DOMPurify.sanitize(req.body[key]);
+    });
+    next();
+};
