@@ -6,4 +6,5 @@ export const confirmEmailSchema = joi.object({
         .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
         .required(),
     OTP: joi.number().required(),
+    csrfToken: joi.string().required(),
 });

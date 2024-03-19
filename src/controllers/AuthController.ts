@@ -26,6 +26,7 @@ const login = async (req: Request, res: Response) => {
     }
 
     const token = await authServices.login(email, password);
+    const { csrfSecret, csrfToken: _csrf } = authServices.generateCSRFToken();
 
     const cookiesOptions = {
         httpOnly: true,
@@ -36,10 +37,11 @@ const login = async (req: Request, res: Response) => {
     };
 
     res.cookie('accessToken', token, cookiesOptions);
+    res.cookie('_csrf', csrfSecret, cookiesOptions);
 
-    const response: ResponseType<{ token: string }> = {
+    const response: ResponseType<{ token: string; _csrf: string }> = {
         message: 'user logged in!',
-        data: { token },
+        data: { token, _csrf },
     };
     res.status(HttpStatusCodes.OK).json(response);
 };

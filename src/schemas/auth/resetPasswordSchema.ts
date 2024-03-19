@@ -8,4 +8,5 @@ export const resetPasswordSchema = joi.object({
     newPassword: joi.string().alphanum().min(8).max(16).required(),
     repeatPassword: joi.ref('newPassword'),
     userOTP: joi.number().required(),
+    csrfToken: joi.string().required(),
 });

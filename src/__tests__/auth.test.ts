@@ -5,7 +5,7 @@ import App from '../app';
 
 import prisma from '../utils/PrismaClient';
 import { UserType } from '../types/UserType';
-import { createToken, hashPassword } from '../services/auth';
+import { createToken, generateCSRFToken, hashPassword } from '../services/auth';
 
 export const prismaMock = prisma as unknown as DeepMockProxy<PrismaClient>;
 jest.mock('../utils/PrismaClient', () => ({
@@ -21,6 +21,7 @@ describe('Given authController', () => {
     beforeEach(() => {
         mockReset(prismaMock);
     });
+
     describe('Given signup route', () => {
         it('Should return status 201 and user data', async () => {
             const newUserData = {
@@ -115,11 +116,13 @@ describe('Given authController', () => {
             const res = await supertest(App)
                 .get('/api/v1/auth/login')
                 .send(req);
+
             expect(res.status).toBe(200);
             expect(res.body.message).toBe('user logged in!');
             expect(res.body.data).toHaveProperty('token');
             expect(res.headers['set-cookie']).not.toBeNull();
             expect(res.headers['set-cookie'][0]).toContain('accessToken');
+            expect(res.headers['set-cookie'][1]).toContain('_csrf');
         });
         it('should return status 404 and error message', async () => {
             const newUserData = {
@@ -270,9 +273,13 @@ describe('Given authController', () => {
     });
     describe('Given confirm email route', () => {
         it('should return status 201 and message', async () => {
+            const { csrfToken: mockCSRFToken, csrfSecret: mockCSRFSecret } =
+                generateCSRFToken();
+
             const req = {
                 OTP: 123456,
                 email: 'test@test.com',
+                csrfToken: mockCSRFToken,
             } as unknown as Request;
 
             const userData = {
@@ -294,6 +301,7 @@ describe('Given authController', () => {
 
             const res = await supertest(App)
                 .post('/api/v1/auth/confirm-email')
+                .set('Cookie', [`_csrf=${mockCSRFSecret}`])
                 .send(req);
 
             expect(res.status).toBe(201);
@@ -302,24 +310,32 @@ describe('Given authController', () => {
             expect(res.body.data.user.id).toBe(userData.id);
         });
         it('should return status 403 and error message and property', () => {
+            const { csrfToken: mockCSRFToken, csrfSecret: mockCSRFSecret } =
+                generateCSRFToken();
+
             const reqArray = [
                 {
                     OTP: '123456',
                     email: 'test@test.com',
+                    csrfToken: mockCSRFToken,
                 },
                 {
                     OTP: '123456',
                     email: 'test@test.co.il',
+                    csrfToken: mockCSRFToken,
                 },
                 {
                     OTP: 123456,
+                    csrfToken: mockCSRFToken,
                 },
                 {
                     email: 'test@test.net',
+                    csrfToken: mockCSRFToken,
                 },
                 {
                     OTP: 123456,
                     email: 'test@test.com',
+                    csrfToken: mockCSRFToken,
                 },
             ];
 
@@ -342,7 +358,10 @@ describe('Given authController', () => {
 
             reqArray.forEach((req) => {
                 Promise.all([
-                    supertest(App).post('/api/v1/auth/confirm-email').send(req),
+                    supertest(App)
+                        .post('/api/v1/auth/confirm-email')
+                        .set('Cookie', [`_csrf=${mockCSRFSecret}`])
+                        .send(req),
                 ]).then(([response]) => {
                     expect(response.status).toBe(403);
                     const errorMessage = response.body.error[0];
@@ -360,10 +379,14 @@ describe('Given authController', () => {
     });
     describe('Given reset password route', () => {
         it('should return status 200 and message and reset user password', async () => {
+            const { csrfToken: mockCSRFToken, csrfSecret: mockCSRFSecret } =
+                generateCSRFToken();
+
             const req = {
                 email: 'test@test.com',
                 newPassword: '208389403',
                 userOTP: 123457,
+                csrfToken: mockCSRFToken,
             };
 
             const userData = {
@@ -393,6 +416,7 @@ describe('Given authController', () => {
 
             const res = await supertest(App)
                 .put('/api/v1/auth/reset-password')
+                .set('Cookie', [`_csrf=${mockCSRFSecret}`])
                 .send(req);
 
             expect(res.status).toBe(200);
@@ -401,10 +425,14 @@ describe('Given authController', () => {
             expect(res.body.data.user.id).toBe(userData.id);
         });
         it('should return status 404', async () => {
+            const { csrfToken: mockCSRFToken, csrfSecret: mockCSRFSecret } =
+                generateCSRFToken();
+
             const req = {
                 email: 'test@test.com',
                 newPassword: '208389403',
                 userOTP: 123456,
+                csrfToken: mockCSRFToken,
             };
 
             const userData = {
@@ -426,6 +454,7 @@ describe('Given authController', () => {
 
             const res = await supertest(App)
                 .put('/api/v1/auth/reset-password')
+                .set('Cookie', [`_csrf=${mockCSRFSecret}`])
                 .send(req);
 
             expect(res.status).toBe(404);

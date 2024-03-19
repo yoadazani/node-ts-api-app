@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
+import Csrf from 'csrf';
 import { UserType } from '../types/UserType';
 import * as authModel from '../modules/AuthModel';
 import { AuthError } from '../errors/AuthError';
@@ -79,6 +80,18 @@ const createToken = (user: UserType): string => {
     return jwt.sign(payload, authConfig.jwtSecret!, options);
 };
 
+const generateCSRFToken = () => {
+    const csrfProtection = new Csrf();
+
+    const csrfSecret = csrfProtection.secretSync();
+    const csrfToken = csrfProtection.create(csrfSecret);
+
+    return {
+        csrfSecret,
+        csrfToken,
+    };
+};
+
 const hashPassword = (password: string): string =>
     bcrypt.hashSync(password, 10);
 
@@ -132,4 +145,5 @@ export {
     removeResetPasswordOTP,
     hashPassword,
     comparePassword,
+    generateCSRFToken,
 };
