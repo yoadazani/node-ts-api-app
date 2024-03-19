@@ -22,6 +22,33 @@ describe('Given authController', () => {
         mockReset(prismaMock);
     });
 
+    describe('Given rate limit middleware', () => {
+        it('should return status 429 and message', async () => {
+            const req = {
+                email: 'test@test.com',
+                password: '12345678',
+            } as unknown as Request;
+
+            // Mock the Prisma Client's user.create method to throw an error
+            prismaMock.user.findFirst.mockResolvedValue({
+                id: '1',
+                name: 'test',
+                email: 'test@test.com',
+                password: hashPassword('12345678'),
+            } as UserType);
+
+            const res = await Promise.all(
+                Array.from({ length: 6 }).map(() =>
+                    supertest(App).get('/api/v1/auth/login').send(req),
+                ),
+            );
+
+            expect(res[5].status).toBe(429);
+            expect(res[5].text).toBe(
+                'Too many requests from this IP, please try again after 15 minutes',
+            );
+        });
+    });
     describe('Given signup route', () => {
         it('Should return status 201 and user data', async () => {
             const newUserData = {
