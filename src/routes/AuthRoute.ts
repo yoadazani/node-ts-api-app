@@ -11,6 +11,7 @@ import {
 import { cacheMiddleware } from '../middlewares/cache';
 import { isAuthenticated } from '../middlewares/isAuthenticated';
 import { csrfMiddleware } from '../middlewares/csrf';
+import { rateLimiter } from '../middlewares/rate-limiting';
 
 declare module 'express-serve-static-core' {
     interface Request {

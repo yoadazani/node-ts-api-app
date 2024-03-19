@@ -8,6 +8,7 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import { loggerMiddleware } from './loggerMiddleWare';
 import { sanitizeData } from './sanitaization';
+import { rateLimiter } from './rate-limiting';
 
 export const declareMiddlewares = (app: Express) => {
     // Middlewares
@@ -22,8 +23,9 @@ export const declareMiddlewares = (app: Express) => {
 
     app.use(sanitizeData); // sanitize data from request body
     app.use(hpp()); // http params pollution prevention
+    app.use(rateLimiter); // rate limiting for api requests
 
-    app.use(loggerMiddleware);
+    app.use(loggerMiddleware); // logger middleware for log the errors and warnings to logger files
 
     return app;
 };
